@@ -6,10 +6,27 @@ A Retrieval-Augmented Generation (RAG) based chatbot that allows users to ask qu
 
 ## 🚀 Features
 
-- 🔗 **URL-Based Input**: Just paste a news article URL — the bot fetches and processes it.
-- ❓ **Intelligent Q&A**: Ask anything related to the article — summaries, facts, insights.
-- 🧠 **RAG Pipeline**: Combines retrieval with LLM-based generation for accurate responses.
-- ⚡ **Built With**:
-  - [LangChain](https://python.langchain.com/) for RAG pipeline
-  - [Streamlit](https://streamlit.io/) for the interactive UI
-  - [FAISS](https://github.com/facebo)
+- 🔗 URL-Based Input
+Users can input the URL of any news article. The bot automatically scrapes and processes the content behind the scenes.
+
+-❓ Intelligent Question Answering
+Ask anything related to the article — summaries, causes, impacts, key facts, timelines, etc. Powered by contextual understanding, not just keyword search.
+
+-🧠 RAG Pipeline (Retrieval-Augmented Generation)
+Combines retrieval of relevant content chunks with OpenAI’s LLM for natural language generation. Provides precise, grounded answers based on the article content.
+
+-🤖 OpenAI Large Language Model Integration
+Utilizes OpenAI’s gpt-3.5-turbo or gpt-4 for deep comprehension and high-quality responses to user queries.
+
+-🧱 Efficient Text Chunking & Embedding
+Breaks article text into semantically meaningful chunks, then embeds them using LangChain's embedding wrappers for optimized retrieval.
+
+-🔍 Vector Search with FAISS
+Uses FAISS for fast and scalable similarity search over embedded text — ensuring only relevant chunks are passed to the LLM.
+
+-🖥️ Streamlit-Based User Interface
+Clean and interactive UI built with Streamlit makes it easy for users to paste URLs, ask questions, and view answers instantly.
+
+-🔐 Environment Variable Support
+Uses .env file to safely manage sensitive credentials like OpenAI API keys — making the project production-ready.
+
