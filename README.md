@@ -6,7 +6,7 @@ A Retrieval-Augmented Generation (RAG) based chatbot that allows users to ask qu
 
 ## 🚀 Features
 
-- 🔗 URL-Based Input
+-🔗 URL-Based Input
 Users can input the URL of any news article. The bot automatically scrapes and processes the content behind the scenes.
 
 -❓ Intelligent Question Answering
